@@ -218,7 +218,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../README.md" class="md-nav__link">
         Home
       </a>
     </li>
@@ -1158,9 +1158,9 @@ Google Play’s new app serving model uses the <em>App bundle</em> to generate a
 <p>Make sure all necessary style attributes have been added to your custom theme specified in the <code>style.xml</code> file. In case of issues with scan overlay, all relevant attributes start with <code>jumio_scanOverlay</code> and <code>face_scanOverlay</code>.</p>
 <p>An overview of all style attributes <a href="https://github.com/Jumio/mobile-sdk-android/blob/master/sample/JumioMobileSample/src/main/res/values/styles.xml">can be found here</a></p>
 <h2 id="language-localization">Language Localization</h2>
-<p><a href="../#language-localization"><code>Jumio Android Localization</code></a> supports the <a href="https://developer.android.com/training/basics/supporting-devices/languages.html">default Android localization features</a> for a number of different languages and cultures. Any language changes within the SDK or separate language support during runtime (meaning the SDK language differs from the overall device languages) are not possible.</p>
+<p><a href="README.md#language-localization"><code>Jumio Android Localization</code></a> supports the <a href="https://developer.android.com/training/basics/supporting-devices/languages.html">default Android localization features</a> for a number of different languages and cultures. Any language changes within the SDK or separate language support during runtime (meaning the SDK language differs from the overall device languages) are not possible.</p>
 <p>All label texts and button titles in the SDK can be changed and localized by adding the required Strings you want to change in a <code>strings.xml</code> file in a <code>values</code> directory for the language and culture preference that you want to support. All modifiable strings can be modified can be found <a href="https://github.com/Jumio/mobile-sdk-android/blob/master/sample/JumioMobileSample/src/main/res/values/strings-jumio-sdk.xml">within our Sample application</a>.</p>
-<p>Currently, the following languages are automatically supported for your convenience: <a href="../#language-localization">Supported languages</a></p>
+<p>Currently, the following languages are automatically supported for your convenience: <a href="README.md#language-localization">Supported languages</a></p>
 <p>Runtime language changes <em>within</em> the SDK or separate language support (meaning the SDK language differs from the overall device languages) is not possible. All of the used string values can be found in the <a href="sample/JumioMobileSample/src/main/res">sample project resource folder</a>. If you want to <a href="https://developer.android.com/guide/topics/resources/localization#managing-strings">manage certain strings individually</a>, please access them in the <strong>values-xx</strong> folder that corresponds to the language.</p>
 <p><strong>Note:</strong> The last two letters of the values folder (marked "xx" above) refer to the <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO alpha-2 country code</a>, which has to be used for the localization to work automatically. Please refer to the country list if you have trouble determining which string file contains to which language.</p>
 <h3 id="accessibility">Accessibility</h3>
