@@ -2,26 +2,6 @@
 
 # Known Issues
 
-## Table of Contents
-- [SDK Version 4.0.0 and Above](#sdk-version-400-and-above)
-  - [Duplicate Files for 'libc++_shared.so' Library](#duplicate-lib-c)
-- [SDK Version 3.9.2 and 4.0.0](#sdk-version-392-and-400)
-  - [Face Scan Crash at Start](#face-scan-crash-at-start)
-- [SDK Version 3.9.0](#sdk-version-390)
-  - [Custom UI](#custom-ui)
-- [SDK Version 3.8.0 and Newer](#sdk-version-380-and-newer)
-  - [Stuck on 'Processing Documents' Screen ](#stuck-on-'processing-documents'-screen)
-  - [Issues with okhttp3 Dependency Using iProov](#Issues-with-okhttp3-dependency-using-iproov)
-  - [Jetifier Issues](#jetifier-issues)
-  - [Fallback to Manual Capturing Using iProov](#fallback-to-manual-capturing-using-iProov)
-  - [Custom UI](#custom-ui-1)
-- [SDK Version 3.7.x](#sdk-version-37x)
-  - [Kotlin Integration](#kotlin-integration)
-- [Miscellaneous](#miscellaneous)
-  - [Static Interface Methods Are only Supported with Android N](#Static-interface-methods-are-only-supported-with-Android-N)
-  - [SDK Crashes Trying to Display Animations (Android Version 5 and Lower)](#sdk-crashes-trying-to-display-animations-(android-version-4-and-lower))
-  - [Country Missing from the Country List](#country-missing-from-the-country-list)
-
 # SDK Version 4.0.0 and Above
 
 <div id="duplicate-lib-c">

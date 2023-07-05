@@ -1,11 +1,11 @@
 ![Header Graphic](images/jumio_feature_graphic.jpg)
 
-[![Version](https://img.shields.io/github/v/release/Jumio/mobile-sdk-android?style=flat)](../README.md#release-notes)
+[![Version](https://img.shields.io/github/v/release/Jumio/mobile-sdk-android?style=flat)](README.md#release-notes)
 [![API Doc](https://img.shields.io/github/v/release/Jumio/mobile-sdk-android?label=API%20doc&color=green&style=flat)](https://jumio.github.io/mobile-sdk-android/)
-[![License](https://img.shields.io/badge/license-commercial-3D3D3D?style=flat)](../README.md#copyright)
-[![Platform](https://img.shields.io/badge/platform-Android-lightgrey?style=flat)](../README.md#general-requirements)
-[![API Level](https://img.shields.io/badge/API%20level-21+-orange?style=flat)](../README.md#general-requirements)
-[![Maven](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Frepo.mobile.jumio.ai%2Fcom%2Fjumio%2Fandroid%2Fcore%2Fmaven-metadata.xml?style=flat)](../README.md#integration)
+[![License](https://img.shields.io/badge/license-commercial-3D3D3D?style=flat)](README.md#copyright)
+[![Platform](https://img.shields.io/badge/platform-Android-lightgrey?style=flat)](README.md#general-requirements)
+[![API Level](https://img.shields.io/badge/API%20level-21+-orange?style=flat)](README.md#general-requirements)
+[![Maven](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Frepo.mobile.jumio.ai%2Fcom%2Fjumio%2Fandroid%2Fcore%2Fmaven-metadata.xml?style=flat)](README.md#integration)
 
 [Improvement]: https://img.shields.io/badge/Improvement-green "Improvement shield"
 [Change]: https://img.shields.io/badge/Change-blue "Change shield"
@@ -26,7 +26,7 @@ Please refer to our [SDK maintenance and support policy](maintenance_policy.md) 
 ![Improvement] Improved Liveness customization options (Identity Verification)
 
 ## SDK Version: __4.5.0__
-![Improvement] Added possibility for users to verify their identity using [Digital Identity](../README.md#digital-identity) [ID Verification, Identity Verification]
+![Improvement] Added possibility for users to verify their identity using [Digital Identity](README.md#digital-identity) [ID Verification, Identity Verification]
 
 ![Improvement] iProov SDK version update to 8.3.1 [Identity Verification]
 
@@ -58,7 +58,7 @@ User consent is now acquired for all users to ensure the accordance with biometr
 
 ![Improvement] Autocapture functionality (introduced in SDK 4.2.0) is no longer in beta stage [ID Verification]
 
-![Improvement] [Document Verification](../README.md#document-verification) functionality added
+![Improvement] [Document Verification](README.md#document-verification) functionality added
 
 ![Improvement] Improved user guidance: Clear distinction between scanning frontside or backside of ID document [ID Verification]
 

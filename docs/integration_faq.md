@@ -1,28 +1,6 @@
 ![Header Graphic](images/jumio_feature_graphic.jpg)
 
-# FAQ
-
-## Table of Contents
-- [User Consent](#user-consent)
-- [Improve User Experience and Reduce Drop-off Rate](#improve-user-experience-and-reduce-drop-off-rate)
-- [Managing Errors](#managing-errors)
-    - [Ad Blockers or Firewall](#ad-blockers-or-firewall)
-- [Reducing the Size of Your App](#reducing-the-size-of-your-app)
-    - [Strip Unused Modules](#strip-unused-modules)
-    - [App Bundles](#app-bundles)
-    - [Architectures, ABI Filters & Splitting](#architectures,-abi-filters-&-splitting)
-- [Jumio Authentication Workflow Integration](#jumio-authentication-workflow-integration)
-- [Fallback and Manual Capturing](#fallback-and-manual-capturing)
-- [Custom Theme](#custom-theme-issues)
-  - [Custom Theme Is Not Working](#custom-theme-is-not-working)
-  - [Scan Overlay Is Not Displayed](#scan-overlay-is-not-displayed)
-- [Language Localization](#language-localization)
-    - [String Updates](#string-updates)
-- [Java 8 Compatibility](#Java-8-compatibility)
-- [Overview of Scanning Methods](overview-of-scanning-methods)
-- [Glossary of Commonly Used Abbreviations](#glossary)
-- [Google Play Store Prominent Disclosure](#google-play-store-prominent-disclosure)
-- [Jumio Support](#jumio-support)
+# Frequently Asked Questions
 
 ## User Consent
 User consent is now acquired for all users to ensure the accordance with biometric data protection laws. Depending on the legal requirements, consent can be acquired in one of two ways: __Active__ or __passive__.
@@ -71,13 +49,13 @@ In these cases the SDK will return a specific error code: __A10900__ If this err
 
 ## Reducing the Size of Your App
 The Netverify SDK contains a wide range of different scanning methods. The SDK is able to capture identity documents and extract information on the device using enhanced machine learning and computer vision technologies.
-The current download size of the [sample application](../sample/JumioMobileSample/) containing all products is around **12.5 MB** as mentioned in the [ID Verification guide](integration_guide.md).
+The current download size of the [sample application](sample/JumioMobileSample/) containing all products is around **12.5 MB** as mentioned in the [ID Verification guide](integration_guide.md).
 If you want to reduce the size of the SDK within your application, there are several ways to achieve this:
 
 ### Strip Unused Modules
 Depending on your specific needs, you may want to strip out unused functionality. As most of our modules can be linked optionally, you can reduce file size by adapting your [Jumio dependencies](integration_guide.md#dependencies) in your build.gradle.
 
-The following table shows a range of different product configurations with the size and modules that are linked for it. These measurements reflect the extra size that Jumio components add to your app download size and are based on our [sample application](../sample/JumioMobileSample/).
+The following table shows a range of different product configurations with the size and modules that are linked for it. These measurements reflect the extra size that Jumio components add to your app download size and are based on our [sample application](sample/JumioMobileSample/).
 
 | Product Configuration                       |   Size   |                                                      Modules                                                      |
 |:--------------------------------------------|:--------:|:-----------------------------------------------------------------------------------------------------------------:|
@@ -181,13 +159,13 @@ Make sure all necessary style attributes have been added to your custom theme sp
 An overview of all style attributes [can be found here](https://github.com/Jumio/mobile-sdk-android/blob/master/sample/JumioMobileSample/src/main/res/values/styles.xml)
 
 ## Language Localization
-[`Jumio Android Localization`](../README.md#language-localization) supports the [default Android localization features](https://developer.android.com/training/basics/supporting-devices/languages.html) for a number of different languages and cultures. Any language changes within the SDK or separate language support during runtime (meaning the SDK language differs from the overall device languages) are not possible.
+[`Jumio Android Localization`](README.md#language-localization) supports the [default Android localization features](https://developer.android.com/training/basics/supporting-devices/languages.html) for a number of different languages and cultures. Any language changes within the SDK or separate language support during runtime (meaning the SDK language differs from the overall device languages) are not possible.
 
-All label texts and button titles in the SDK can be changed and localized by adding the required Strings you want to change in a `strings.xml` file in a `values` directory for the language and culture preference that you want to support. All modifiable strings can be modified can be found [within our Sample application](../sample/JumioMobileSample/src/main/res/values/strings-jumio-sdk.xml).
+All label texts and button titles in the SDK can be changed and localized by adding the required Strings you want to change in a `strings.xml` file in a `values` directory for the language and culture preference that you want to support. All modifiable strings can be modified can be found [within our Sample application](https://github.com/Jumio/mobile-sdk-android/blob/master/sample/JumioMobileSample/src/main/res/values/strings-jumio-sdk.xml).
 
-Currently, the following languages are automatically supported for your convenience: [Supported languages](../README.md#language-localization)
+Currently, the following languages are automatically supported for your convenience: [Supported languages](README.md#language-localization)
 
-Runtime language changes *within* the SDK or separate language support (meaning the SDK language differs from the overall device languages) is not possible. All of the used string values can be found in the [sample project resource folder](../sample/JumioMobileSample/src/main/res). If you want to [manage certain strings individually](https://developer.android.com/guide/topics/resources/localization#managing-strings), please access them in the __values-xx__ folder that corresponds to the language.
+Runtime language changes *within* the SDK or separate language support (meaning the SDK language differs from the overall device languages) is not possible. All of the used string values can be found in the [sample project resource folder](sample/JumioMobileSample/src/main/res). If you want to [manage certain strings individually](https://developer.android.com/guide/topics/resources/localization#managing-strings), please access them in the __values-xx__ folder that corresponds to the language.
 
 __Note:__ The last two letters of the values folder (marked "xx" above) refer to the [ISO alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2), which has to be used for the localization to work automatically. Please refer to the country list if you have trouble determining which string file contains to which language.
 

@@ -4,42 +4,6 @@
 
 Jumio’s products allow businesses to establish the genuine identity of their users by verifying government-issued IDs in real-time. ID Verification, Identity Verification and other services are used by financial service organizations and other leading brands to create trust for safe onboarding, money transfers and user authentication.
 
-## Table of Contents
-
-- [Release Notes](#release-notes)
-- [Code Documentation](#code-documentation)
-- [Setup](#setup)
-  - [Dependencies](#dependencies)
-  - [SDK Version Check](#sdk-version-check)
-  - [Root Detection](#root-detection)
-  - [Device Supported Check](#device-supported-check)
-  - [Autocapture](#autocapture)
-  - [Certified Face Liveness](#certified-face-liveness)
-  - [Barcode Scanning Alternative](#barcode-scanning-alternative)
-  - [Privacy Notice](#privacy-notice)
-  - [Digital Identity (DID)](#digital-identity-did)
-- [Initialization](#initialization)
-  - [Requesting a Token (via OAuth2)](#requesting-a-token-via-oauth2)
-  - [Initializing the Jumio SDK](#initializing-the-jumio-sdk)
-- [Configuration](#configuration)
-  - [Worfklow Selection](#worfklow-selection)
-  - [Transaction Identifiers](#transaction-identifiers)
-  - [Preselection](#preselection)
-  - [Miscellaneous](#miscellaneous)
-- [SDK Workflow](#sdk-workflow)
-  - [Retrieving Information](#retrieving-information)
-- [Default UI](#default-ui)
-- [Custom UI](#custom-ui)
-  - [Controller Handling](#controller-handling)
-  - [Credential Handling](#credential-handling)
-  - [ScanPart Handling](#scanpart-handling)
-  - [Result and Error Handling](#result-and-error-handling)
-  - [Instant Feedback](#instant-feedback)
-- [Customization](#customization)
-  - [Customization Tool](#customization-tool)
-  - [Default UI customization](#default-ui-customization)
-  - [Custom UI customization](#custom-ui-customization)
-
 ## Release Notes
 
 Please refer to our [Change Log](changelog.md) for more information. Current SDK version: **4.6.0**
@@ -52,10 +16,10 @@ Full API documentation for the Jumio Android SDK can be found [here](https://jum
 
 ## Setup
 
-The [basic setup](../README.md#basics) is required before continuing with the following setup for the Jumio SDK. If you are updating your SDK to a newer version, please also refer to:
+The [basic setup](README.md#basics) is required before continuing with the following setup for the Jumio SDK. If you are updating your SDK to a newer version, please also refer to:
 
-:arrow_right:&nbsp;&nbsp;[Changelog](docs/changelog.md)  
-:arrow_right:&nbsp;&nbsp;[Transition Guide](docs/transition_guide.md)
+:arrow_right:&nbsp;&nbsp;[Changelog](changelog.md)  
+:arrow_right:&nbsp;&nbsp;[Transition Guide](transition_guide.md)
 
 ### Dependencies
 
@@ -65,7 +29,7 @@ The [SDK Setup Tool](https://jumio.github.io/mobile-configuration-tool/out/) is 
 
 Below you can find a list of dependencies that can be added to your application to enable different functionality of the Jumio SDK. Some modules are mandatory, others are optional.
 
-If an optional module is **not linked**, some functionalities may not be available, but the library size will be reduced. The [Sample app](../sample/JumioMobileSample/) apk size is currently around **17 MB**.
+If an optional module is **not linked**, some functionalities may not be available, but the library size will be reduced. The [Sample app](sample/JumioMobileSample/) apk size is currently around **17 MB**.
 
 ```groovy
 // [Mandatory] Jumio Core library
@@ -242,7 +206,7 @@ Your OAuth2 credentials are constructed using your API token as the Client ID an
 
 Client ID and Client secret are used to generate an OAuth2 access token. Send a workflow request using the acquired OAuth2 access token to receive the SDK token necessary to initialize the Jumio SDK.
 
-OAuth2 has to be activated for your account. Contact your Jumio Account Manager for activation. For more details, please refer to [Authentication and Encryption](../README.md#authentication-and-encryption).
+OAuth2 has to be activated for your account. Contact your Jumio Account Manager for activation. For more details, please refer to [Authentication and Encryption](README.md#authentication-and-encryption).
 
 ### Initializing the Jumio SDK
 

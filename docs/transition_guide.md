@@ -29,10 +29,10 @@ __Example:__ If you're updating from SDK version __3.7.2__ to __3.9.2__, the cha
   * ~~`<item name="iproov_animation_background">`~~
 
 
-* See also: [Jumio sample `styles.xml`](../sample/JumioMobileSample/src/main/res/values/styles.xml)
+* See also: [Jumio sample `styles.xml`](https://github.com/Jumio/mobile-sdk-android/blob/master/sample/JumioMobileSample/src/main/res/values/styles.xml)
 
 #### Dependency Updates
-* NEW Liveness dependency: `implementation "com.jumio.android:liveness:4.6.0"` 
+* NEW Liveness dependency: `implementation "com.jumio.android:liveness:4.6.0"`
 
 ## 4.5.0
 #### Public API Changes
@@ -383,7 +383,7 @@ __Removed strings:__
 
 ## 3.6.2
 The Proguard keep rule `-keep class com.jumio.** { *; }` has to be added to your Proguard rules, if it wasn't added yet.
-Details can be found in chapter [Proguard](../README.md#proguard)
+Details can be found in chapter [Proguard](README.md#proguard)
 
 ## 3.6.1
 No backward incompatible changes
