@@ -46,7 +46,7 @@ dependencies {
 	implementation "com.jumio.android:docfinder:4.6.0"          // Autocapture library
 	implementation "com.jumio.android:barcode:4.6.0"            // Barcode scanning
 	implementation "com.jumio.android:iproov:4.6.0"             // Face Liveness library
-  	implementation "com.jumio.android:liveness:4.6.0"           // Face Liveness library
+  implementation "com.jumio.android:liveness:4.6.0"           // Face Liveness library
 	implementation "com.jumio.android:digital-identity:4.6.0"   // Digital Identity verification library
   	...
 }
