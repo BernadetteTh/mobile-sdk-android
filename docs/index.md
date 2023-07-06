@@ -7,26 +7,6 @@
 [![API Level](https://img.shields.io/badge/API%20level-21+-orange?style=flat)](#general-requirements)
 [![Maven](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Frepo.mobile.jumio.ai%2Fcom%2Fjumio%2Fandroid%2Fcore%2Fmaven-metadata.xml?style=flat)](#integration)
 
-# Table of Contents
-- [Code Documentation](#code-documentation)
-- [Quickstart](#quickstart)
-- [Basics](#basics)
-  - [General Requirements](#general-requirements)
-  - [Authentication and Encryption](#authentication-and-encryption)
-  - [Permissions](#permissions)
-  - [Integration](#integration)
-  - [Proguard](#proguard)
-  - [Language Localization](#language-localization)
-- [Document Verification](#document-verification)
-- [Digital Identity](#digital-identity)
-- [Analytics With Datadog](#analytics-with-datadog)
-- [Security](#security)
-- [Release Notes](#release-notes)
-- [Maintenance and Support](#maintenance-and-support)
-  - [Two-factor Authentication](#two-factor-authentication)
-  - [Contact](#contact)
-  - [Copyright](#copyright)
-
 # Overview
 The Jumio Software Development Kit (SDK) provides you with a set of tools and UIs (default or custom) to develop an Android application perfectly fitted to your specific needs.
 
@@ -44,13 +24,13 @@ If you need information on older SDK versions, please refer to:
 - [3.9.1](https://github.com/Jumio/mobile-sdk-android/tree/v3.9.1)    
 - [3.9.0](https://github.com/Jumio/mobile-sdk-android/tree/v3.9.0)    
 
-## Code Documentation
+### Code Documentation
 Full API documentation for the Jumio Android SDK can be found [here](https://jumio.github.io/mobile-sdk-android).
 
 
 -----
 
-# Quickstart
+## Quickstart
 This section provides a quick overview on how to get started with the [Android sample application](sample) that can be found here on Github. You will need a __commercial Jumio License__ to successfully run any of our examples; for details, contact sales@jumio.com. You will also need an up-to-date Android Studio version to open and try out the sample project.
 
 Start by downloading the [Android sample application](sample) from the Jumio Github repo. You can either clone the repository (using SSH or HTTPS) to your local device or simply download everything as a ZIP.
@@ -84,9 +64,9 @@ Once you start up the sample application, you'll be given the option of trying o
 
 -----
 
-# Basics
+## Basics
 
-## General Requirements
+### General Requirements
 ⚠️&nbsp;&nbsp;__Android Deprecation Notice__  
 Please be aware that the upcoming SDK 4.7.0 will be the last SDK version supporting Android 5.0 (API level 21).
 All subsequent SDK versions will require at least Android 6.0 "Marshmallow" (API level 23).
@@ -104,18 +84,18 @@ The following architectures are supported in the SDK:
 
 You will need a __commercial Jumio License__ to run any of our examples. For details, contact sales@jumio.com.
 
-## Authentication and Encryption
+### Authentication and Encryption
 ℹ️&nbsp;&nbsp;__As of version 4.0.0 and onward, the SDK can only be used in combination with Jumio KYX. API v2 as well as using API token and secret to authenticate against the SDK will no longer be compatible.__
 
 Before starting a session in our SDK, an SDK token has to be obtained. Please refer to out [API Guide](https://docs.jumio.com/production/Content/Integration/Integration%20Guide.htm) for further details. To authenticate against the API calls, an OAuth2 access token needs to be retrieved from the Customer Portal.
 
 Within the response of the [Account Creation or Account Update](https://docs.jumio.com/production/Content/Integration/Creating%20or%20Updatng%20Account/Creating%20or%20Updating%20Accounts.htm) API, a SDK token is returned, which needs to be applied to initiate the mobile SDK.
 
-### Basic Authentication (Deprecated)
+#### Basic Authentication (Deprecated)
 Previously, Basic Auth credentials were constructed using your API token as the User ID and your API secret as the password. You still can manage API token and secret in the Customer Portal under:
 * __Settings > API credentials > API Users__
 
-### Authentication with OAuth2
+#### Authentication with OAuth2
 Your OAuth2 credentials are constructed using your API token as the Client ID and your API secret as the Client secret. You can view and manage your API token and secret in the Customer Portal under:
 * __Settings > API credentials > OAuth2 Clients__
 
@@ -153,7 +133,7 @@ curl --request POST --location 'https://auth.amer-1.jumio.ai/oauth2/token' \
 #### Access Token Timeout (OAuth2)
 Your OAuth2 access token is valid for 60 minutes. After the token lifetime is expired, it is necessary to generate a new access token.
 
-### Workflow Transaction Token Timeout
+#### Workflow Transaction Token Timeout
 The token lifetime is set to 30 minutes per default. It can be configured via the [Jumio Customer Portal](https://docs.jumio.com/production/Content/Settings/Identity%20Verification/Application%20Settings.htm) and can be overwritten using the API call (`tokenLifetime`). Within this token lifetime the token can be used to initialize the SDK.
 
 As soon as the workflow (transaction) starts, a 15 minutes session timeout is triggered. For each action performed (capture image, upload image) the session timeout will reset, and the 15 minutes will start again.
@@ -254,14 +234,14 @@ _Afrikaans, Arabic, Bulgarian, Chinese(Simplified), Chinese(Traditional), Croati
 
 Our SDK supports accessibility features. Visually impaired users can now enable __TalkBack__ or increase the __text size__ on their device. The accessibility strings that are used by TalkBack contain *accessibility* in their key and can be also modified in `strings.xml`.
 
-# Document Verification
+## Document Verification
 As of Android SDK 4.3.0, Document Verification functionality is available.
 This functionality allows users to submit a number of different document types (e.g. a utility bill or bank statement) in digital form and verify the validity and authenticity of this document.
 
 Documents can be submitted using one of two ways: Taking a photo of the document or uploading a PDF file.
 For more details, please refer to our [integration guide](integration_guide.md#jumio-document-credential).
 
-### Supported Documents:
+### Supported Documents
 * BC (Birth certificate)
 * BS (Bank statement)
 * CAAP (Cash advance application)
@@ -291,14 +271,14 @@ For more details, please refer to our [integration guide](integration_guide.md#j
 
 ℹ️&nbsp;&nbsp;__Note:__ To enable the use of this feature, please contact [Jumio support](#support).
 
-# Digital Identity
+## Digital Identity
 As of Jumio Android SDK 4.5.0, users may use their Digital Identity to verify their identity.
 For now 'ID by Mastercard' is the only Digital Identity provider currently supported by our SDK.
 
 If you want to enable Digital Identity verification for your account please [contact us](https://support.jumio.com).
 In case you are already set up to use Digital Identity verification within your app, check out the integration steps explained [here](integration_guide.md#digital-identity-did).
 
-# Analytics With Datadog
+## Analytics With Datadog
 Analytic feedback and diagnostics enable us to continually improve our SDK and its performance, as well as investigate potential issues. With the Jumio SDK, we use [Datadog](https://github.com/DataDog/dd-sdk-android) as an optional tool to collect diagnostic information. Data collected includes specific SDK information like version numbers, started and finished SDK instances and scan workflows, thrown exceptions and error information, as well as other mobile events. Please note that gathering analytics data requires user consent due to legal regulations such as GDPR. The consent is granted when our MLA is accepted.
 
 To benefit from Datadog, add the following dependency to your `build.gradle` file:
@@ -313,29 +293,29 @@ To grant or revoke user consent, please use `JumioSDK.giveDataDogConsent(boolean
 
 ----
 
-# Security
+## Security
 All SDK related traffic is sent over HTTPS using TLS and public key pinning. Additionally, the information itself within the transmission is also encrypted utilizing __Application Layer Encryption__ (ALE). ALE is a Jumio custom-designed security protocol that utilizes RSA-OAEP and AES-256 to ensure that the data cannot be read or manipulated even if the traffic was captured.
 
 ----
 
-# Release Notes
+## Release Notes
 See our [Change Log](changelog.md) for more information about our current SDK version and further details.
 
-# Maintenance and Support
+## Maintenance and Support
 Please refer to our [SDK maintenance and support policy](maintenance_policy.md) for more information about Mobile SDK maintenance and support.
 
-## Two-factor Authentication
+### Two-factor Authentication
 If you want to enable two-factor authentication for your Jumio Customer Portal, [contact us](https://support.jumio.com). Once enabled, users will be guided through the setup upon their first login to obtain a security code using the Google Authenticator app.
 
-## Licenses
+### Licenses
 The software contains third-party open source software. For more information, see [licenses](licenses).
 
 This software is based in part on the work of the Independent JPEG Group.
 
-## Contact
+### Contact
 If you have any questions regarding our implementation guide please contact Jumio Customer Service at support@jumio.com. The [Jumio online helpdesk](https://support.jumio.com) contains a wealth of information regarding our services including demo videos, product descriptions, FAQs, and other resources that can help to get you started with Jumio.
 
-## Copyright
+### Copyright
 &copy; Jumio Corporation, 395 Page Mill Road, Suite 150, Palo Alto, CA 94306
 
 The source code and software available on this website (“Software”) is provided by Jumio Corp. or its affiliated group companies (“Jumio”) "as is” and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall Jumio be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including but not limited to procurement of substitute goods or services, loss of use, data, profits, or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this Software, even if advised of the possibility of such damage.

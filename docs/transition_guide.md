@@ -383,7 +383,7 @@ __Removed strings:__
 
 ## 3.6.2
 The Proguard keep rule `-keep class com.jumio.** { *; }` has to be added to your Proguard rules, if it wasn't added yet.
-Details can be found in chapter [Proguard](README.md#proguard)
+Details can be found in chapter [Proguard](index.md#proguard)
 
 ## 3.6.1
 No backward incompatible changes

@@ -16,10 +16,10 @@ Full API documentation for the Jumio Android SDK can be found [here](https://jum
 
 ## Setup
 
-The [basic setup](README.md#basics) is required before continuing with the following setup for the Jumio SDK. If you are updating your SDK to a newer version, please also refer to:
+The [basic setup](index.md#basics) is required before continuing with the following setup for the Jumio SDK. If you are updating your SDK to a newer version, please also refer to:
 
-:arrow_right:&nbsp;&nbsp;[Changelog](changelog.md)  
-:arrow_right:&nbsp;&nbsp;[Transition Guide](transition_guide.md)
+[Changelog](changelog.md)  
+[Transition Guide](transition_guide.md)
 
 ### Dependencies
 
@@ -206,7 +206,7 @@ Your OAuth2 credentials are constructed using your API token as the Client ID an
 
 Client ID and Client secret are used to generate an OAuth2 access token. Send a workflow request using the acquired OAuth2 access token to receive the SDK token necessary to initialize the Jumio SDK.
 
-OAuth2 has to be activated for your account. Contact your Jumio Account Manager for activation. For more details, please refer to [Authentication and Encryption](README.md#authentication-and-encryption).
+OAuth2 has to be activated for your account. Contact your Jumio Account Manager for activation. For more details, please refer to [Authentication and Encryption](index.md#authentication-and-encryption).
 
 ### Initializing the Jumio SDK
 
