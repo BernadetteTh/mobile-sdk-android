@@ -10,19 +10,20 @@ theme:
     primary: indigo
     accent: teal
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
+    #- navigation.tabs
+    #- navigation.tabs.sticky
     - navigation.sections
     - navigation.top
     - navigation.footer
+    - content.code.copy
 
 docs_dir: docs
 
 nav:
   - Home: index.md
-  - Integration Guide: integration_guide.md
-  - SDK Changes: 
-    - Changelog: changelog.md
+  - Integration: integration_guide.md
+  - SDK Changes:
+    - Release Notes: changelog.md
     - Transition Guide: transition_guide.md
   - Resources:
     - FAQ: integration_faq.md

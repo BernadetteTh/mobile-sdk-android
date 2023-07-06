@@ -4,22 +4,13 @@
 
 Jumio’s products allow businesses to establish the genuine identity of their users by verifying government-issued IDs in real-time. ID Verification, Identity Verification and other services are used by financial service organizations and other leading brands to create trust for safe onboarding, money transfers and user authentication.
 
-## Release Notes
-
-Please refer to our [Change Log](changelog.md) for more information. Current SDK version: **4.6.0**
-
-For technical changes that should be considered when updating the SDK, please read our [Transition Guide](transition_guide.md).
-
 ## Code Documentation
 
 Full API documentation for the Jumio Android SDK can be found [here](https://jumio.github.io/mobile-sdk-android/).
 
-## Setup
+## Get Started
 
-The [basic setup](index.md#basics) is required before continuing with the following setup for the Jumio SDK. If you are updating your SDK to a newer version, please also refer to:
-
-[Changelog](changelog.md)  
-[Transition Guide](transition_guide.md)
+The [basic setup](index.md#basics) is required before continuing with the following setup for the Jumio SDK.
 
 ### Dependencies
 
@@ -29,7 +20,7 @@ The [SDK Setup Tool](https://jumio.github.io/mobile-configuration-tool/out/) is 
 
 Below you can find a list of dependencies that can be added to your application to enable different functionality of the Jumio SDK. Some modules are mandatory, others are optional.
 
-If an optional module is **not linked**, some functionalities may not be available, but the library size will be reduced. The [Sample app](sample/JumioMobileSample/) apk size is currently around **17 MB**.
+If an optional module is **not linked**, some functionalities may not be available, but the library size will be reduced. The [Sample app](https://github.com/Jumio/mobile-sdk-android/tree/master/sample/JumioMobileSample/) apk size is currently around **17 MB**.
 
 ```groovy
 // [Mandatory] Jumio Core library
@@ -46,7 +37,7 @@ dependencies {
 	implementation "com.jumio.android:docfinder:4.6.0"          // Autocapture library
 	implementation "com.jumio.android:barcode:4.6.0"            // Barcode scanning
 	implementation "com.jumio.android:iproov:4.6.0"             // Face Liveness library
-  	implementation "com.jumio.android:liveness:4.6.0"           // Face Liveness library
+  implementation "com.jumio.android:liveness:4.6.0"           // Face Liveness library
 	implementation "com.jumio.android:digital-identity:4.6.0"   // Digital Identity verification library
   	...
 }
