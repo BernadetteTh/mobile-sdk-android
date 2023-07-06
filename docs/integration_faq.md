@@ -159,11 +159,11 @@ Make sure all necessary style attributes have been added to your custom theme sp
 An overview of all style attributes [can be found here](https://github.com/Jumio/mobile-sdk-android/blob/master/sample/JumioMobileSample/src/main/res/values/styles.xml)
 
 ## Language Localization
-[`Jumio Android Localization`](README.md#language-localization) supports the [default Android localization features](https://developer.android.com/training/basics/supporting-devices/languages.html) for a number of different languages and cultures. Any language changes within the SDK or separate language support during runtime (meaning the SDK language differs from the overall device languages) are not possible.
+[`Jumio Android Localization`](index.md#language-localization) supports the [default Android localization features](https://developer.android.com/training/basics/supporting-devices/languages.html) for a number of different languages and cultures. Any language changes within the SDK or separate language support during runtime (meaning the SDK language differs from the overall device languages) are not possible.
 
 All label texts and button titles in the SDK can be changed and localized by adding the required Strings you want to change in a `strings.xml` file in a `values` directory for the language and culture preference that you want to support. All modifiable strings can be modified can be found [within our Sample application](https://github.com/Jumio/mobile-sdk-android/blob/master/sample/JumioMobileSample/src/main/res/values/strings-jumio-sdk.xml).
 
-Currently, the following languages are automatically supported for your convenience: [Supported languages](README.md#language-localization)
+Currently, the following languages are automatically supported for your convenience: [Supported languages](index.md#language-localization)
 
 Runtime language changes *within* the SDK or separate language support (meaning the SDK language differs from the overall device languages) is not possible. All of the used string values can be found in the [sample project resource folder](sample/JumioMobileSample/src/main/res). If you want to [manage certain strings individually](https://developer.android.com/guide/topics/resources/localization#managing-strings), please access them in the __values-xx__ folder that corresponds to the language.
 

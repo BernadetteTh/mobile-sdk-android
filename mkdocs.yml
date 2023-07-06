@@ -13,7 +13,7 @@ theme:
   custom_css: mkdocs.css
 
 nav:
-  - Home: README.md
+  - Home: index.md
   - Integration Guide: 'integration_guide.md'
   - SDK Changes: 
     - Changelog: 'changelog.md'
