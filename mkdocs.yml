@@ -1,6 +1,6 @@
 site_name: Android SDK
 repo_name: mobile-sdk-android
-repo_url: https://github.com/BernadetteTh/mobile-sdk-android
+repo_url: https://github.com/Jumio/mobile-sdk-android
 
 copyright: Copyright &copy; 2023 Jumio
 
@@ -11,6 +11,8 @@ theme:
     accent: '#000000'
   custom_dir: css
   custom_css: mkdocs.css
+
+docs_dir: docs
 
 nav:
   - Home: index.md
