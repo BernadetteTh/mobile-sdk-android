@@ -1,0 +1,83 @@
+/* Custom CSS for MkDocs Material Theme */
+
+/* Modify font family and font size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Change primary color */
+:root {
+  --md-primary: #FF0000;
+}
+
+/* Change secondary color */
+:root {
+  --md-secondary: #00FF00;
+}
+
+/* Customize link styles */
+a {
+  color: #0066CC;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF0000;
+  text-decoration: underline;
+}
+
+/* Adjust code block styles */
+pre {
+  background-color: #F0F0F0;
+  padding: 10px;
+  border: 1px solid #CCCCCC;
+}
+
+code {
+  font-family: Consolas, monospace;
+}
+
+/* Add custom styles to specific elements */
+h1 {
+  color: #FF9900;
+}
+
+blockquote {
+  border-left: 4px solid #0066CC;
+  padding-left: 10px;
+}
+
+/* Customize table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #CCCCCC;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #EEEEEE;
+}
+
+/* Increase font size in sidebar nav */
+.md-sidebar-nav a {
+  font-size: 16px; /* Adjust the value to your desired font size */
+}
+
+/* Enable copy button for code blocks */
+.codehilite .copy-code-button {
+  position: absolute;
+  top: 0.25em;
+  right: 0.25em;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.codehilite:hover .copy-code-button {
+  opacity: 1;
+}
