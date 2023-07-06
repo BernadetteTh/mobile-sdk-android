@@ -1,0 +1,1245 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../transition_guide/">
+      
+      
+        <link rel="next" href="../known_issues/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
+    
+    
+      
+        <title>FAQ - Android SDK</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#frequently-asked-questions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Android SDK" class="md-header__button md-logo" aria-label="Android SDK" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Android SDK
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              FAQ
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Jumio/mobile-sdk-android" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mobile-sdk-android
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Android SDK" class="md-nav__button md-logo" aria-label="Android SDK" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Android SDK
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Jumio/mobile-sdk-android" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mobile-sdk-android
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integration_guide/" class="md-nav__link">
+        Integration Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          SDK Changes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          SDK Changes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        Changelog
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transition_guide/" class="md-nav__link">
+        Transition Guide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Resources
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Resources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          FAQ
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        FAQ
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#user-consent" class="md-nav__link">
+    User Consent
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#improve-user-experience-and-reduce-drop-off-rate" class="md-nav__link">
+    Improve User Experience and Reduce Drop-off Rate
+  </a>
+  
+    <nav class="md-nav" aria-label="Improve User Experience and Reduce Drop-off Rate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-of-a-non-ideal-sdk-integration" class="md-nav__link">
+    Example of a Non-Ideal SDK integration:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suggested-improvements-with-additional-customization" class="md-nav__link">
+    Suggested Improvements with Additional Customization:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-errors" class="md-nav__link">
+    Managing Errors
+  </a>
+  
+    <nav class="md-nav" aria-label="Managing Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ad-blockers-or-firewall" class="md-nav__link">
+    Ad Blockers or Firewall
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reducing-the-size-of-your-app" class="md-nav__link">
+    Reducing the Size of Your App
+  </a>
+  
+    <nav class="md-nav" aria-label="Reducing the Size of Your App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#strip-unused-modules" class="md-nav__link">
+    Strip Unused Modules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app-bundles" class="md-nav__link">
+    App Bundles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architectures-abi-filters-splitting" class="md-nav__link">
+    Architectures, ABI Filters &amp; Splitting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jumio-authentication-workflow-integration" class="md-nav__link">
+    Jumio Authentication Workflow Integration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fallback-and-manual-capturing" class="md-nav__link">
+    Fallback and Manual Capturing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-theme" class="md-nav__link">
+    Custom Theme
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom Theme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-theme-is-not-working" class="md-nav__link">
+    Custom Theme Is Not Working
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scan-overlay-is-not-displayed" class="md-nav__link">
+    Scan Overlay Is Not Displayed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#language-localization" class="md-nav__link">
+    Language Localization
+  </a>
+  
+    <nav class="md-nav" aria-label="Language Localization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accessibility" class="md-nav__link">
+    Accessibility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-updates" class="md-nav__link">
+    String Updates
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#java-8-compatibility" class="md-nav__link">
+    Java 8 Compatibility
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview-of-scanning-methods" class="md-nav__link">
+    Overview of Scanning Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview of Scanning Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autocapture" class="md-nav__link">
+    Autocapture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linefinder" class="md-nav__link">
+    Linefinder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mrz" class="md-nav__link">
+    MRZ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#barcode" class="md-nav__link">
+    Barcode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-capture" class="md-nav__link">
+    Manual Capture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nfc" class="md-nav__link">
+    NFC
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glossary" class="md-nav__link">
+    Glossary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-play-store-prominent-disclosure" class="md-nav__link">
+    Google Play Store Prominent Disclosure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jumio-support" class="md-nav__link">
+    Jumio Support
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../known_issues/" class="md-nav__link">
+        Known Issues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integration_glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maintenance_policy/" class="md-nav__link">
+        Maintenance
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#user-consent" class="md-nav__link">
+    User Consent
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#improve-user-experience-and-reduce-drop-off-rate" class="md-nav__link">
+    Improve User Experience and Reduce Drop-off Rate
+  </a>
+  
+    <nav class="md-nav" aria-label="Improve User Experience and Reduce Drop-off Rate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-of-a-non-ideal-sdk-integration" class="md-nav__link">
+    Example of a Non-Ideal SDK integration:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suggested-improvements-with-additional-customization" class="md-nav__link">
+    Suggested Improvements with Additional Customization:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-errors" class="md-nav__link">
+    Managing Errors
+  </a>
+  
+    <nav class="md-nav" aria-label="Managing Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ad-blockers-or-firewall" class="md-nav__link">
+    Ad Blockers or Firewall
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reducing-the-size-of-your-app" class="md-nav__link">
+    Reducing the Size of Your App
+  </a>
+  
+    <nav class="md-nav" aria-label="Reducing the Size of Your App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#strip-unused-modules" class="md-nav__link">
+    Strip Unused Modules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app-bundles" class="md-nav__link">
+    App Bundles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architectures-abi-filters-splitting" class="md-nav__link">
+    Architectures, ABI Filters &amp; Splitting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jumio-authentication-workflow-integration" class="md-nav__link">
+    Jumio Authentication Workflow Integration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fallback-and-manual-capturing" class="md-nav__link">
+    Fallback and Manual Capturing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-theme" class="md-nav__link">
+    Custom Theme
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom Theme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-theme-is-not-working" class="md-nav__link">
+    Custom Theme Is Not Working
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scan-overlay-is-not-displayed" class="md-nav__link">
+    Scan Overlay Is Not Displayed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#language-localization" class="md-nav__link">
+    Language Localization
+  </a>
+  
+    <nav class="md-nav" aria-label="Language Localization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accessibility" class="md-nav__link">
+    Accessibility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-updates" class="md-nav__link">
+    String Updates
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#java-8-compatibility" class="md-nav__link">
+    Java 8 Compatibility
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview-of-scanning-methods" class="md-nav__link">
+    Overview of Scanning Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview of Scanning Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autocapture" class="md-nav__link">
+    Autocapture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linefinder" class="md-nav__link">
+    Linefinder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mrz" class="md-nav__link">
+    MRZ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#barcode" class="md-nav__link">
+    Barcode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-capture" class="md-nav__link">
+    Manual Capture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nfc" class="md-nav__link">
+    NFC
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glossary" class="md-nav__link">
+    Glossary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-play-store-prominent-disclosure" class="md-nav__link">
+    Google Play Store Prominent Disclosure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jumio-support" class="md-nav__link">
+    Jumio Support
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<p><img alt="Header Graphic" src="../images/jumio_feature_graphic.jpg" /></p>
+<h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
+<h2 id="user-consent">User Consent</h2>
+<p>User consent is now acquired for all users to ensure the accordance with biometric data protection laws. Depending on the legal requirements, consent can be acquired in one of two ways: <strong>Active</strong> or <strong>passive</strong>.</p>
+<p>For <strong>active</strong> consent instances, the user needs to accept the consent items explicitly, e.g. by enabling a UI switch or checking a checkbox for each consent item. For <strong>passive</strong> consent instances, it is enough to present the consent text and URL to the user. The user implicitly accepts the passive consent items by continuing with the journey.</p>
+<p><img src="images/consent/consent_passive.jpg" alt="Acquiring passive user consent">
+<img src="images/consent/consent_active_unchecked.jpg" alt="Acquiring active user consent">
+<img src="images/consent/consent_active_checked.jpg" alt="Acquired active user consent"></p>
+<h2 id="improve-user-experience-and-reduce-drop-off-rate">Improve User Experience and Reduce Drop-off Rate</h2>
+<p>When evaluating user flows, one of the most commonly used metrics is the rate of drop-offs. At Jumio, we see considerable variance in drop-off rates across industries and customer implementations. For some implementations and industries, we see a higher rate of drop-offs on the first screens when compared with the average.
+Scanning an ID with sensitive personal data printed on it naturally creates a high barrier for participation on the part of the end user. Therefore, conversion rates can be significantly influenced when the application establishes a sense of trust and ensures that users feel secure sharing their information.</p>
+<p>One pattern that is recognizable throughout all of our customers’ SDK implementations: the more seamless the SDK integration, and the better job is done of setting user expectations prior to the SDK journey, the lower the drop-off rate becomes.</p>
+<p>Our SDK provides a variety of <a href="../integration_guide/#customization">customization options</a> to help customers achieve a seamless integration. For customers using the standard SDK workflow, our <a href="https://jumio.github.io/surface-android/">Surface tool</a> provides an easy-to-use WYSIWYG interface to see simple customization options that can be incorporated with minimal effort and generate the code necessary to implement them. For customers who want to have more granular control over look and feel, our SDK offers the <a href="../integration_guide/#custom-ui">CustomUI</a> option, which allows you to customize the entire user interface.</p>
+<h3 id="example-of-a-non-ideal-sdk-integration">Example of a Non-Ideal SDK integration:</h3>
+<p><img alt="Onboarding bad case" src="../images/onboardingBadCase.jpg" />
+- Default SDK UI is used and is presented on one of the first screens during onboarding. The user is unprepared for the next steps and might not understand the intention behind the request to show their ID.</p>
+<h3 id="suggested-improvements-with-additional-customization">Suggested Improvements with Additional Customization:</h3>
+<p><img alt="Onboarding good case" src="../images/onboardingGoodCase.jpg" />
+ - Host application has an explanatory help screen that explains what will happen next and why this information is needed.
+ - SDK is either customized to have a more embedded appearance or <a href="../integration_guide/#custom-ui">CustomUI</a> is used to create a completely seamless integration in the UX of our customers.
+ - Also after the Jumio workflow that shows the displayed results and/or a message that the ID is currently verified, which might take some minutes.</p>
+<h2 id="managing-errors">Managing Errors</h2>
+<p>Not every error that is returned from the SDK should be treated the same. The error codes listed for <a href="../integration_guide/#error-codes">ID Verification</a> should be handled specifically.</p>
+<p>The following table highlights the most common error codes which are returned from the SDK and explains how to handle them appropriately in your application.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Code</th>
+<th align="left">Cause</th>
+<th align="left">Recommended Handling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">A[xx][yyyy]</td>
+<td align="left">Caused by temporary network issues like a slow connection.</td>
+<td align="left">Advise to check the signal and retry the SDK journey.</td>
+</tr>
+<tr>
+<td align="center">E[xx][yyyy]</td>
+<td align="left">Flight mode is activated or no connection available.</td>
+<td align="left">The user should be asked to disable flight mode or to verify if the phone has proper signal. Advise to connect to WIFI and retry the SDK journey afterwards.</td>
+</tr>
+<tr>
+<td align="center">G[xx][0000]</td>
+<td align="left">The user pressed back or X to exit the SDK while no error view was presented.</td>
+<td align="left">Reasons for this could be manifold. Often it might be due to the fact that the user didn't have his identity document at hand. Give the user the option to retry.</td>
+</tr>
+<tr>
+<td align="center">J[xx][yyyy]</td>
+<td align="left">The SDK journey was not completed within the session's max. lifetime. (The default is 15 minutes.)</td>
+<td align="left">The user should be informed about the timeout and be directed to start a new Jumio SDK session.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ad-blockers-or-firewall">Ad Blockers or Firewall</h3>
+<p>End users might face the situation where they are connected to a network that can't reach our Jumio endpoints.</p>
+<p>Possible reasons for this might be ad blockers on the device, network wide ad blockers or network specific firewall settings.<br />
+In these cases the SDK will return a specific error code: <strong>A10900</strong> If this error is received, we suggest to add a screen where the user is advised to switch network and/or turn off possible ad blockers.</p>
+<h2 id="reducing-the-size-of-your-app">Reducing the Size of Your App</h2>
+<p>The Netverify SDK contains a wide range of different scanning methods. The SDK is able to capture identity documents and extract information on the device using enhanced machine learning and computer vision technologies.
+The current download size of the <a href="sample/JumioMobileSample/">sample application</a> containing all products is around <strong>12.5 MB</strong> as mentioned in the <a href="../integration_guide/">ID Verification guide</a>.
+If you want to reduce the size of the SDK within your application, there are several ways to achieve this:</p>
+<h3 id="strip-unused-modules">Strip Unused Modules</h3>
+<p>Depending on your specific needs, you may want to strip out unused functionality. As most of our modules can be linked optionally, you can reduce file size by adapting your <a href="../integration_guide/#dependencies">Jumio dependencies</a> in your build.gradle.</p>
+<p>The following table shows a range of different product configurations with the size and modules that are linked for it. These measurements reflect the extra size that Jumio components add to your app download size and are based on our <a href="sample/JumioMobileSample/">sample application</a>.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Product Configuration</th>
+<th align="center">Size</th>
+<th align="center">Modules</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Base</td>
+<td align="center">2.68 MB</td>
+<td align="center">core</td>
+</tr>
+<tr>
+<td align="left">Base + iProov</td>
+<td align="center">3.51 MB</td>
+<td align="center">core, iproov</td>
+</tr>
+<tr>
+<td align="left">Base + MRZ</td>
+<td align="center">4.19 MB</td>
+<td align="center">core, mrz</td>
+</tr>
+<tr>
+<td align="left">Base + MRZ, Linefinder</td>
+<td align="center">4.57 MB</td>
+<td align="center">core, mrz, linefinder</td>
+</tr>
+<tr>
+<td align="left">Base + MRZ, Linefinder, Barcode</td>
+<td align="center">5.62 MB</td>
+<td align="center">core, mrz, linefinder, barcode</td>
+</tr>
+<tr>
+<td align="left">Base + MRZ, Linefinder, Barcode-Vision</td>
+<td align="center">4.89 MB</td>
+<td align="center">core, mrz, linefinder, barcode-vision</td>
+</tr>
+<tr>
+<td align="left">Base + MRZ, Linefinder, Barcode, iProov</td>
+<td align="center">6.45 MB</td>
+<td align="center">core, mrz, linefinder, barcode, iproov</td>
+</tr>
+<tr>
+<td align="left">Base + MRZ, Linefinder, Barcode, Liveness</td>
+<td align="center">8.93 MB</td>
+<td align="center">core, mrz, linefinder, barcode, liveness</td>
+</tr>
+<tr>
+<td align="left">Base + MRZ, Linefinder, Barcode, NFC</td>
+<td align="center">7.26 MB</td>
+<td align="center">core, mrz, linefinder, barcode, nfc</td>
+</tr>
+<tr>
+<td align="left">All (Custom UI only)</td>
+<td align="center">13.07 MB</td>
+<td align="center">core, mrz, linefinder, barcode, barcode-vision, iproov, nfc, docfinder, devicerisk, liveness</td>
+</tr>
+<tr>
+<td align="left">Base + MRZ, Linefinder, Default UI</td>
+<td align="center">4.92 MB</td>
+<td align="center">core, mrz, linefinder, default-ui</td>
+</tr>
+<tr>
+<td align="left">Base + MRZ, Linefinder, Default UI, DataDog</td>
+<td align="center">5.09 MB</td>
+<td align="center">core, mrz, linefinder, default-ui, datadog</td>
+</tr>
+<tr>
+<td align="left">All (with Default UI)</td>
+<td align="center">13.58 MB</td>
+<td align="center">core, mrz, linefinder, barcode, barcode-vision, iproov, nfc, docfinder, devicerisk, default-ui, datadog, liveness</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong>  The size values in the table above depict the decompressed install size required on a device and are comparable to the estimated Play Store files size. The size value might vary by a few percent, depending on the actual device used. All sizes are calculated based on a build of our sample application using arm64 architecture, english translations and xxhdpi screen resolution.</p>
+<h3 id="app-bundles">App Bundles</h3>
+<p>Android offers a way to reduce the size of a customer's built application using <a href="https://developer.android.com/guide/app-bundle/">App bundles</a>
+Google Play’s new app serving model uses the <em>App bundle</em> to generate and serve optimized APKs for each user’s device configuration, so they download only the code and resources they need to run your app.</p>
+<h3 id="architectures-abi-filters-splitting">Architectures, ABI Filters &amp; Splitting</h3>
+<p>The SDK supports <em>armeabi-v7a</em> and <em>arm64-v8a</em> architecture. You can filter which architecture to use by specifying the abiFilters. That way, you could manually filter for <em>armeabi-v7a</em> as <em>arm64-v8a</em>.</p>
+<p><strong>Be aware:</strong> As of August 2019, Google Play Console will require that new apps and app updates with native libraries provide 64-bit versions in addition to their 32-bit versions, as mentioned in the <a href="https://android-developers.googleblog.com/2017/12/improving-app-security-and-performance.html">Android developers blog.</a>.</p>
+<p><strong>Note:</strong> The abiFilters command in the ndk closure affects the Google Play Store filtering.</p>
+<pre><code>defaultConfig {
+    ndk {
+        abiFilters armeabi-v7a&quot;,&quot;arm64-v8a&quot;,&quot;x86&quot;,&quot;x86_64&quot;
+    }
+}
+</code></pre>
+<p>It's also possible to manually provide a split apk on Google Play. The apk can be split based on the architecture if multiple apks should be uploaded to the Google Play Store. Google Play Store manages to deliver the appropriate apk for the device.</p>
+<pre><code>splits {
+    abi {
+        enable true
+        reset()
+        include armeabi-v7a&quot;,&quot;arm64-v8a&quot;,&quot;x86&quot;,&quot;x86_64&quot;
+        universalApk false
+    }
+}
+</code></pre>
+<h2 id="jumio-authentication-workflow-integration">Jumio Authentication Workflow Integration</h2>
+<p>Jumio Authentication can be used for any use case in which you want your end-users to confirm their identities. As a result of the Authentication journey you get a success or failed result back from the SDK or from our server (callback or retrieval).</p>
+<p>In case of a <strong>successful result</strong> you can grant the user access to your service or let him proceed with the user flow. In case of a <strong>failed result</strong>, a proper retry handling within your workflow is necessary. A failure could occur because of the following reasons:
+* The user presenting their face is a different one than the user who owns the account
+* An imposter is trying to spoof the liveness check
+* User does not want to show their face at all, but is still trying to complete the onboarding
+* User does not look straight into the camera
+* User does not finish the first or second step of face scan
+* User has bad lighting conditions (too dark, too bright, reflections on face, not enough contrast, …)
+* User is covering (parts) of their face with a scarf, hat or something similar
+* A different person is scanning their face in the second step than in the first one
+* User is not able to align his face with the oval presented during scanning</p>
+<p>In case an Authentication fail is returned, we recommend to allow the user between 3-5 Authentication attempts to prove their identity, before you lock the user from performing the action. This approach makes the most sense, as you don't want to lock out possible valid users who might not have completed the face capture task successfully for a legitimate reason. Don't worry about offering a potential fraudster more attempts to gain access to your system - our bullet proof liveness check does not allow them to get a successful result.</p>
+<h2 id="fallback-and-manual-capturing">Fallback and Manual Capturing</h2>
+<p>The method <a href="https://jumio.github.io/mobile-sdk-android/com/jumio/nv/custom/NetverifyCustomScanPresenter.html#isFallbackAvailable--"><code>isFallbackAvailable()</code></a> determines if a fallback for the current scan mode is available and returns a boolean. If the method returns true, the available fallback scan mode will have to be started with the method <a href="https://jumio.github.io/mobile-sdk-android/com/jumio/nv/custom/NetverifyCustomScanPresenter.html#startFallback--"><code>startFallback()</code></a>.</p>
+<p>The method <a href="https://jumio.github.io/mobile-sdk-android/com/jumio/nv/custom/NetverifyCustomScanPresenter.html#showShutterButton--"><code>showShutterButton()</code></a> determines if a shutter button needs to be shown because the image has to be taken manually and returns a boolean. If the method returns true, you will have to display your own shutter button and call the method <a href="https://jumio.github.io/mobile-sdk-android/com/jumio/nv/custom/NetverifyCustomScanPresenter.html#takePicture--"><code>takePicture()</code></a> once it is clicked.</p>
+<p><strong>Note:</strong> Please note that the method <code>showShutterButton()</code> does neither create nor display the actual shutter button!</p>
+<p>"Manual capturing" simply refers to the user being able to manually take a picture. "Fallback" refers to an alternative scan mode the SDK can resort to if possible, in case there is an issue during the original scanning process. The fallback scan mode might be manual capturing in some cases, but not all.</p>
+<h2 id="custom-theme">Custom Theme</h2>
+<h3 id="custom-theme-is-not-working">Custom Theme Is Not Working</h3>
+<p>Any customized theme needs to be defined in a <code>styles.xml</code> file and has to inherit from the parent theme <code>Theme.Jumio</code>.</p>
+<pre><code>&lt;style name=&quot;AppTheme.JumioCustom&quot; parent=&quot;Theme.Jumio&quot;&gt;
+  &lt;item name=&quot;colorPrimary&quot;&gt;@color/colorPrimary&lt;/item&gt;
+  ...
+&lt;/style&gt;
+
+</code></pre>
+<p>The actual name of the customized theme is arbitrary and can be chosen at will.</p>
+<p>Any customized theme needs to be added to the <code>AndroidManifest.xml</code> file by replacing the initial <code>Theme.Jumio</code>.  </p>
+<pre><code>&lt;activity
+  android:name=&quot;com.jumio.defaultui.JumioActivity&quot;
+  android:theme=&quot;@style/AppTheme.JumioCustom&quot;
+  ...
+&lt;activity/&gt;
+</code></pre>
+<h3 id="scan-overlay-is-not-displayed">Scan Overlay Is Not Displayed</h3>
+<p>Make sure all necessary style attributes have been added to your custom theme specified in the <code>style.xml</code> file. In case of issues with scan overlay, all relevant attributes start with <code>jumio_scanOverlay</code> and <code>face_scanOverlay</code>.</p>
+<p>An overview of all style attributes <a href="https://github.com/Jumio/mobile-sdk-android/blob/master/sample/JumioMobileSample/src/main/res/values/styles.xml">can be found here</a></p>
+<h2 id="language-localization">Language Localization</h2>
+<p><a href="../#language-localization"><code>Jumio Android Localization</code></a> supports the <a href="https://developer.android.com/training/basics/supporting-devices/languages.html">default Android localization features</a> for a number of different languages and cultures. Any language changes within the SDK or separate language support during runtime (meaning the SDK language differs from the overall device languages) are not possible.</p>
+<p>All label texts and button titles in the SDK can be changed and localized by adding the required Strings you want to change in a <code>strings.xml</code> file in a <code>values</code> directory for the language and culture preference that you want to support. All modifiable strings can be modified can be found <a href="https://github.com/Jumio/mobile-sdk-android/blob/master/sample/JumioMobileSample/src/main/res/values/strings-jumio-sdk.xml">within our Sample application</a>.</p>
+<p>Currently, the following languages are automatically supported for your convenience: <a href="../#language-localization">Supported languages</a></p>
+<p>Runtime language changes <em>within</em> the SDK or separate language support (meaning the SDK language differs from the overall device languages) is not possible. All of the used string values can be found in the <a href="sample/JumioMobileSample/src/main/res">sample project resource folder</a>. If you want to <a href="https://developer.android.com/guide/topics/resources/localization#managing-strings">manage certain strings individually</a>, please access them in the <strong>values-xx</strong> folder that corresponds to the language.</p>
+<p><strong>Note:</strong> The last two letters of the values folder (marked "xx" above) refer to the <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO alpha-2 country code</a>, which has to be used for the localization to work automatically. Please refer to the country list if you have trouble determining which string file contains to which language.</p>
+<h3 id="accessibility">Accessibility</h3>
+<p>Our SDK supports accessibility features. Visually impaired users can now enable <strong>TalkBack</strong> or increase the <strong>text size</strong> on their device. The accessibility-strings that are used by TalkBack contain <em>accessibility</em> in their key and can be also modified in the <code>strings.xml</code>.</p>
+<h3 id="string-updates">String Updates</h3>
+<p>For an overview of all updates and changes of SDK string keys please refer to <a href="https://github.com/Jumio/mobile-sdk-android/blame/master/sample/JumioMobileSample/src/main/res/values/strings.xml">the revision history</a> on Github.</p>
+<h2 id="java-8-compatibility">Java 8 Compatibility</h2>
+<p>Jumio SDK uses <a href="https://developer.android.com/studio/write/java8-support.html">Java 8 language.</a> It is necessary to enable Java 8 source and target compatibility for in the <code>build.gradle</code> file using <code>compileOptions</code>:</p>
+<pre><code>android {
+...
+  compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+</code></pre>
+<h2 id="overview-of-scanning-methods">Overview of Scanning Methods</h2>
+<h4 id="autocapture">Autocapture</h4>
+<p>Combines all previously existing scanning methods into one automatic, seamless experience.</p>
+<p><img alt="Autocapture Success" src="../images/capturing_methods/autocapture_01.jpg" />  <img alt="Autocapture Scanning" src="../images/capturing_methods/autocapture_02.jpg" /></p>
+<h4 id="linefinder">Linefinder</h4>
+<p>Scanning using edge detection.</p>
+<p><img alt="Linefinder Empty" src="../images/capturing_methods/linefinder_scanning_01.jpg" />  <img alt="Linefinder Document" src="../images/capturing_methods/linefinder_scanning_02.jpg" /> <img alt="Linefinder Processing" src="../images/capturing_methods/linefinder_scanning_03.jpg" /></p>
+<h4 id="mrz">MRZ</h4>
+<p>Data extraction from passports, some identity cards and some visas.</p>
+<p><img alt="MRZ Empty" src="../images/capturing_methods/mrz_scanning_01.jpg" />  <img alt="MRZ Document" src="../images/capturing_methods/mrz_scanning_02.jpg" /></p>
+<h4 id="barcode">Barcode</h4>
+<p>PDF417 barcode data extraction, for example from US and Canadian driver licenses.</p>
+<p><img alt="Barcode Empty" src="../images/capturing_methods/barcode_scanning_01.jpg" />  <img alt="Barcode Document" src="../images/capturing_methods/barcode_scanning_02.jpg" /></p>
+<h4 id="manual-capture">Manual Capture</h4>
+<p>Manual scanning (taking a picture) using the shutterbutton, fallback option in case user is having trouble.</p>
+<p><img alt="Manual Capture Empty" src="../images/capturing_methods/manual_capturing_01.jpg" /> <img alt="Manual Capture Document" src="../images/capturing_methods/manual_capturing_02.jpg" /></p>
+<h4 id="nfc">NFC</h4>
+<p>Data extraction from eMRTD documents, for example passports.</p>
+<p><img alt="NFC Start" src="../images/capturing_methods/nfc_scanning_01.jpg" />  <img alt="NFC Scanning" src="../images/capturing_methods/nfc_scanning_02.jpg" /></p>
+<h2 id="glossary">Glossary</h2>
+<p>A <a href="../integration_glossary/">quick guide to commonly used abbreviations</a> throughout the documentation which may not be all that familiar.</p>
+<h2 id="google-play-store-prominent-disclosure">Google Play Store Prominent Disclosure</h2>
+<p>Some parts of the SDK might require prominent disclosure - please see the <a href="../integration_guide/#privacy-notice">Privacy Notice</a> section in the Integration Guide for further details</p>
+<h2 id="jumio-support">Jumio Support</h2>
+<p>The Jumio development team is constantly striving to optimize the size of our frameworks while increasing functionality, to improve your KYC and to fight fraud. If you have any further questions, please reach out to our <a href="mailto:support@jumio.com">support team</a>.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Jumio
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": "1.0.0"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>
