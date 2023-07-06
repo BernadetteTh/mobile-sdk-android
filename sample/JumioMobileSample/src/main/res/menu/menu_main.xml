@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:id="@+id/nav_products"
+		android:title="@string/menu_products" />
+
+	<item android:title="@string/menu_legal_information">
+		<menu>
+			<item
+				android:id="@+id/nav_terms_of_use"
+				android:icon="@drawable/ic_info"
+				android:title="@string/menu_terms_of_use" />
+			<item
+				android:id="@+id/nav_privacy_policy"
+				android:icon="@drawable/ic_info"
+				android:title="@string/menu_privacy_policy" />
+			<item
+				android:id="@+id/nav_licenses"
+				android:icon="@drawable/ic_licenses"
+				android:title="@string/menu_licenses" />
+		</menu>
+	</item>
+
+	<item android:title="@string/menu_version">
+		<menu>
+			<item
+				android:id="@+id/nav_sdk"
+				android:title="" />
+		</menu>
+
+	</item>
+</menu>

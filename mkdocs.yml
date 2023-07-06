@@ -1,0 +1,37 @@
+site_name: Android SDK
+repo_name: mobile-sdk-android
+repo_url: https://github.com/Jumio/mobile-sdk-android
+site_url: https://squidfunk.github.io/mkdocs-material/
+
+copyright: Copyright &copy; 2023 Jumio
+
+theme: 
+  name: minimal
+  custom_dir: css
+  custom_css: mkdocs.css
+
+docs_dir: docs
+
+nav:
+  - Home: index.md
+  - Integration Guide: integration_guide.md
+  - SDK Changes: 
+    - Changelog: changelog.md
+    - Transition Guide: transition_guide.md
+  - Resources:
+    - FAQ: integration_faq.md
+    - Known Issues: known_issues.md
+    - Glossary: integration_glossary.md
+  - Maintenance: maintenance_policy.md
+
+extra:
+  author: Bernadette Th
+  version: 1.0.0
+
+dev_addr: 127.0.0.1:8000
+theme:
+  material
+theme:
+  material
+theme:
+  material
