@@ -1,14 +1,14 @@
 site_name: Android SDK
 repo_name: mobile-sdk-android
 repo_url: https://github.com/Jumio/mobile-sdk-android
-site_url: https://squidfunk.github.io/mkdocs-material/
+#site_url: https://squidfunk.github.io/mkdocs-material/
 
 copyright: Copyright &copy; 2023 Jumio
 
 theme: 
-  name: minimal
-  custom_dir: css
-  custom_css: mkdocs.css
+  material
+  # custom_dir: css
+  # custom_css: mkdocs.css
 
 docs_dir: docs
 
@@ -29,9 +29,3 @@ extra:
   version: 1.0.0
 
 dev_addr: 127.0.0.1:8000
-theme:
-  material
-theme:
-  material
-theme:
-  material
