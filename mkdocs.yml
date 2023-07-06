@@ -4,29 +4,37 @@ repo_url: https://github.com/Jumio/mobile-sdk-android
 
 copyright: Copyright &copy; 2023 Jumio
 
-theme:
+theme: 
   name: material
   palette:
-    primary: '#FFFFFF'
-    accent: '#000000'
-  custom_dir: css
-  custom_css: mkdocs.css
+    primary: indigo
+    accent: teal
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+
+docs_dir: docs
 
 nav:
-  - Home: README.md
-  - Integration Guide: 'integration_guide.md'
+  - Home: index.md
+  - Integration Guide: integration_guide.md
   - SDK Changes: 
-    - Changelog: 'changelog.md'
-    - Transition Guide: 'transition_guide.md'
+    - Changelog: changelog.md
+    - Transition Guide: transition_guide.md
   - Resources:
-    - FAQ: 'integration_faq.md' 
-    - Known Issues: 'known_issues.md'
-    - Glossary: 'integration_glossary.md'
-  - Maintenance: 'maintenance_policy.md'
+    - FAQ: integration_faq.md
+    - Known Issues: known_issues.md
+    - Glossary: integration_glossary.md
+  - Maintenance: maintenance_policy.md
 
 extra:
   author: Bernadette Th
   version: 1.0.0
-
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/Jumio
 
 dev_addr: 127.0.0.1:8000
