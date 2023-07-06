@@ -1,6 +1,6 @@
 site_name: Android SDK
 repo_name: mobile-sdk-android
-repo_url: https://github.com/Jumio/mobile-sdk-android
+repo_url: https://github.com/BernadetteTh/mobile-sdk-android
 
 copyright: Copyright &copy; 2023 Jumio
 
@@ -27,6 +27,5 @@ nav:
 extra:
   author: Bernadette Th
   version: 1.0.0
-
 
 dev_addr: 127.0.0.1:8000
