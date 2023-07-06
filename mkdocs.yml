@@ -6,7 +6,7 @@ repo_url: https://github.com/Jumio/mobile-sdk-android
 copyright: Copyright &copy; 2023 Jumio
 
 theme: 
-  mkdocs
+  name: material
   # custom_dir: css
   # custom_css: mkdocs.css
 
