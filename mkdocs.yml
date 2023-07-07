@@ -6,16 +6,21 @@ copyright: Copyright &copy; 2023 Jumio
 
 theme: 
   name: material
+  logo: images/logos/jumio-white-logo-nav.svg
+  favicon: images/logos/jumio-favicon.png
   palette:
     primary: indigo
     accent: teal
+
   features:
-    #- navigation.tabs
-    #- navigation.tabs.sticky
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.side
     - navigation.sections
     - navigation.top
     - navigation.footer
     - content.code.copy
+    - content.code.annotate
 
 docs_dir: docs
 
@@ -29,7 +34,8 @@ nav:
     - FAQ: integration_faq.md
     - Known Issues: known_issues.md
     - Glossary: integration_glossary.md
-  - Maintenance: maintenance_policy.md
+  - Support Policy: maintenance_policy.md
+  - Sample App: https://github.com/Jumio/mobile-sdk-android/tree/master/sample/JumioMobileSample
 
 extra:
   author: Bernadette Th
@@ -37,5 +43,6 @@ extra:
   social:
     - icon: fontawesome/brands/github 
       link: https://github.com/Jumio
+    
 
 dev_addr: 127.0.0.1:8000
